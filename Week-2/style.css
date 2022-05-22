@@ -8,7 +8,7 @@ h1{
     font-family: 'Odibee Sans', cursive;
 }
 p{
-    font-family: 'Dancing Script', cursive;
+    font-family: monospace;
     margin: 20px 0 20px 0;
 }
 
@@ -51,8 +51,8 @@ p{
     text-align: center;
 }
 
-a{
-    color: green;
+.link-rmore{
+    color: black;
     border-radius: 5px;
     margin: 10px 10px 10px 10px;
     border: 2px solid black;
@@ -60,10 +60,12 @@ a{
 }
 
 .form-data{
-    border: 2px solid black;
-    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+    width: 97%;
     height: auto;
-    margin: 15px 0 15px 0;
+    margin: 15px 0 15px 25px;
+    border-radius: 30px;
 }
 
 .dtitle{
@@ -72,4 +74,26 @@ a{
 
 .personalia{
     margin: 0 0 15px 15px;
+}
+.link-cbox{
+    color: firebrick;
+    
+}
+
+#country{
+    margin: 10px 0 5px 0;
+}
+
+.cbox{
+    margin-right: 5px;
+}
+
+.submit{
+    text-align: center;
+    height: 30px;
+    width: 90px;
+    background-color: gainsboro;
+    border-radius: 50px;
+    font-family: monospace;
+    
 }
