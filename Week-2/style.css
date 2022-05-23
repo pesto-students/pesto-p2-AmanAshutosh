@@ -1,0 +1,72 @@
+.box{
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    position: relative;
+}
+.item1,.item2,.item3,.item4{
+    width: 50%;
+    height: 50%;
+   
+
+}
+.item1{
+    right: 0px;
+    position: absolute;
+    background: yellow;
+    transform: rotate(90deg);
+    animation-name: slide;
+    animation-duration: 1.5s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.item2{
+    left: 0px;
+    position: absolute;
+    background: red;
+    transform: rotateY(90deg);
+    animation-name: slide;
+    animation-duration: 1.5s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.item3{
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    background: green;
+    transform: rotate(90deg);
+    animation-name: slide;
+    animation-duration: 1.5s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.item4{
+     bottom: 0px;
+    left: 0px;
+    position: absolute;
+    background: blue;
+    transform: rotate(90deg);
+    animation-name: slide;
+    animation-duration: 1.5s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slide{
+    to{
+         transform: translateX(300px);
+    }
+}
+
+/*
+  transform: rotate(-90deg);
+    animation-name: slide;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;*/
