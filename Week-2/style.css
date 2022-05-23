@@ -25,7 +25,7 @@
     left: 0px;
     position: absolute;
     background: red;
-    transform: rotateY(90deg);
+    transform: rotate(90deg);
     animation-name: slide;
     animation-duration: 1.5s;
     animation-direction: alternate;
