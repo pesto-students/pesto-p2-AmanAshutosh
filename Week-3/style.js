@@ -1,36 +1,17 @@
-let sum = 0;
-const calc=(n)=>{
-    for(let i=0;i<=n;i++){
-        sum+=i;
-    }
-    return sum;
+var obj = { num: 6 };
+
+function add(a, b){
+  return this.num + a + b;
 }
 
-const memoize=(fun)=>{
-    let cache={};
-    return function(...args){
-        let n=args[0];
-        if(n in cache){
-            console.log("cache");
-            return cache[n];
-        }else{
-            console.log("Calculating first time")
-           let result = fun(n);
-           cache[n]=result;
-           return result;
-        }
-    }
-}
-console.time();
-const efficient=memoize(calc);
-console.log(efficient(5));
-console.timeEnd();
+//The call() and apply() are very similar methods. They both execute the bound function on the object immediately.
 
-console.time();
+const resultCall  = add.call(obj, 3, 5);
+const resultApply = add.apply(obj, [3, 5]);
 
-console.log(efficient(5));
-console.timeEnd();
+//The bind() method does not execute the function right away. Instead, it creates and returns a bound function that can be executed later.
 
+const funcBind    = add.bind(obj, 3, 5)
+const resultBind  = funcBind();
 
-
-
+console.log(resultCall, resultApply, resultBind);
