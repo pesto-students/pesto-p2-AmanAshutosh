@@ -26,6 +26,10 @@ const efficient=memoize(calc);
 console.log(efficient(5));
 console.timeEnd();
 
+console.time();
+
+console.log(efficient(5));
+console.timeEnd();
 
 
 
