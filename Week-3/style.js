@@ -1,17 +1,23 @@
-var obj = { num: 6 };
+function createIncrement() {
+ let count = 0;
+ function increment() {
+     count++;
+    }
+let message = `Count is ${count}`;
 
-function add(a, b){
-  return this.num + a + b;
+function log() {
+    console.log(message);
 }
+return[increment,log];
+}
+const[increment,log] =createIncrement();
+increment();
+increment();
+increment();
+log();// What is logged?
 
-//The call() and apply() are very similar methods. They both execute the bound function on the object immediately.
-
-const resultCall  = add.call(obj, 3, 5);
-const resultApply = add.apply(obj, [3, 5]);
-
-//The bind() method does not execute the function right away. Instead, it creates and returns a bound function that can be executed later.
-
-const funcBind    = add.bind(obj, 3, 5)
-const resultBind  = funcBind();
-
-console.log(resultCall, resultApply, resultBind);
+// " Count is 0 "      
+//  is logged its because according to closures as closer has Access to 
+// its own scope.
+// to the variables of the outer function.
+// the global variables.
