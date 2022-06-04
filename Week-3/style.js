@@ -1,23 +1,23 @@
-function createIncrement() {
- let count = 0;
- function increment() {
-     count++;
+function createStack() {
+    const items1 = [];
+    function push(x){
+        items1.push(x)
+        console.log(items1);
     }
-let message = `Count is ${count}`;
-
-function log() {
-    console.log(message);
+    return {
+       push:function(y){
+           push(y)
+       }
+        
+    };
 }
-return[increment,log];
-}
-const[increment,log] =createIncrement();
-increment();
-increment();
-increment();
-log();// What is logged?
+const stack = createStack();
+console.log(stack);
 
-// " Count is 0 "      
-//  is logged its because according to closures as closer has Access to 
-// its own scope.
-// to the variables of the outer function.
-// the global variables.
+stack.push(10);
+stack.push(5);
+stack.items = [10, 100, 1000]; //encapsulation broken!
+
+console.log(stack);
+stack.push(10);
+console.log(stack);
