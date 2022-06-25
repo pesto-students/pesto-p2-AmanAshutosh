@@ -13,3 +13,5 @@ const findPair = (arr, diff) => {
     return [-1, -1];
 }
 
+//Time complexityu: O(n log n )
+// Space Complexity : O(1)
