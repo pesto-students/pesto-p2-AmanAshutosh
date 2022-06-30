@@ -86,7 +86,7 @@ function printList(node)
     }
 }
  
-// Driver code
+
 head = new Node(50);
 head.next = new Node(20);
 head.next.next = new Node(15);
