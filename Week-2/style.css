@@ -1,3 +1,104 @@
+
+*{
+    
+    margin: 0;
+    padding: 0;
+}
+h1{
+     margin: 5px 0 5px 0;
+    font-family: 'Odibee Sans', cursive;
+}
+p{
+    font-family: monospace;
+    margin: 20px 0 20px 0;
+}
+
+.header{
+    display: block;
+    width: 100%;
+    height: 300px;
+    border: 2px solid black;
+    color: black;
+    text-align: center;
+}
+
+.heading{
+    margin-top: 50px;
+    font-size: 80px;
+    font-family: 'Concert One', cursive;
+}
+
+
+.para-heading{
+    margin-top: 10px;
+    font-size: 30px;
+    font-family: 'Great Vibes', cursive;
+}
+
+.article-main{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.article{
+    width: 350px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 5px; 
+    text-align: center;
+}
+
+.link-rmore{
+    color: black;
+    border-radius: 5px;
+    margin: 10px 10px 10px 10px;
+    border: 2px solid black;
+    text-decoration: none;
+}
+
+.form-data{
+    text-align: center;
+    border: 1px solid black;
+    width: 97%;
+    height: auto;
+    margin: 15px 0 15px 25px;
+    border-radius: 30px;
+}
+
+.dtitle{
+    margin-top: 15px;
+}
+
+.personalia{
+    margin: 0 0 15px 15px;
+}
+.link-cbox{
+    color: firebrick;
+    
+}
+
+#country{
+    margin: 10px 0 5px 0;
+}
+
+.cbox{
+    margin-right: 5px;
+}
+
+.submit{
+    text-align: center;
+    height: 30px;
+    width: 90px;
+    background-color: gainsboro;
+    border-radius: 50px;
+    font-family: monospace;
+    
+}
+=======
 .box{
     width: 400px;
     height: 400px;
@@ -70,3 +171,4 @@
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: linear;*/
+
