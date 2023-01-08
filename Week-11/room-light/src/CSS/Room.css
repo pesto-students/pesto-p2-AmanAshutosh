@@ -1,0 +1,26 @@
+.ON {
+    background-color: white;
+    padding-top: 3vh;
+}
+
+.OFF {
+    background-color: black;
+    color: white;
+    padding-top: 3vh;
+}
+
+button {
+    padding: 1vh 1vw;
+    margin: 3vh 0vw;
+    border-radius: 5px;
+    border: 0;
+}
+
+.btn-OFF {
+    background-color: white;
+}
+
+.btn-ON {
+    background-color: black;
+    color: white
+}
