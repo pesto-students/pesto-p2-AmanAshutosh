@@ -1,0 +1,16 @@
+.App {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 50px;
+}
+
+.App .title {
+  font-size: 3rem;
+  padding: 0px 20px 0px 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  border: 2px solid black;
+  align-self: center;
+  color: #1b1b1b;
+  font-family: "times", cursive;
+}
